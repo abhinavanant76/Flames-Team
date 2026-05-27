@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flames Team</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#0f0f0f,#1a1a1a,#2b0d00);
+color:white;
+overflow-x:hidden;
+}
+
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?auto=format&fit=crop&w=1400&q=80');
+background-size:cover;
+background-position:center;
+}
+
+header h1{
+font-size:5rem;
+color:#ff6a00;
+text-shadow:0 0 20px #ff6a00;
+}
+
+header p{
+font-size:1.3rem;
+margin-top:10px;
+color:#ddd;
+}
+
+.btn{
+margin-top:25px;
+padding:12px 25px;
+background:#ff6a00;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+box-shadow:0 0 20px #ff6a00;
+}
+
+nav{
+position:sticky;
+top:0;
+background:#111;
+padding:15px;
+display:flex;
+justify-content:center;
+gap:20px;
+z-index:1000;
+border-bottom:1px solid #333;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ff6a00;
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+font-size:2.5rem;
+text-align:center;
+margin-bottom:40px;
+color:#ff6a00;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#181818;
+padding:25px;
+border-radius:20px;
+border:1px solid #333;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px rgba(255,106,0,.5);
+}
+
+.card h3{
+color:#ff8c00;
+margin-bottom:10px;
+}
+
+.highlight{
+background:#1b1200;
+border-left:5px solid #ff6a00;
+padding:20px;
+margin:20px 0;
+border-radius:10px;
+}
+
+.rules{
+background:#181818;
+padding:25px;
+border-radius:15px;
+line-height:1.8;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+
+.gallery div{
+height:180px;
+background:#222;
+border-radius:15px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:1.1rem;
+color:#aaa;
+border:1px solid #444;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#0b0b0b;
+border-top:1px solid #333;
+}
+
+.glow{
+color:#ff6a00;
+text-shadow:0 0 15px #ff6a00;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🔥 FLAMES 🔥</h1>
+<p>One Team • One Flame • Endless Adventure</p>
+<a href="#about" class="btn">Explore Team</a>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#leaders">Leadership</a>
+<a href="#members">Members</a>
+<a href="#election">Election</a>
+<a href="#rules">Rules</a>
+<a href="#gallery">Gallery</a>
+</nav>
+
+<section id="about">
+<h2 class="section-title">About Flames</h2>
+
+<div class="highlight">
+<h3>Founder</h3>
+<p><b>Abhinav Anant</b></p>
+</div>
+
+<div class="highlight">
+<h3>Co-Founder</h3>
+<p><b>Aadya Anant</b></p>
+</div>
+
+<p style="margin-top:20px;font-size:18px;">
+Flames is a team built on friendship, adventure, teamwork,
+leadership and creativity. We play games together, explore
+new ideas and organize exciting activities. More projects
+and adventures will be added in the future.
+</p>
+</section>
+
+<section id="leaders">
+<h2 class="section-title">Leadership</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>👑 Leader</h3>
+<p><b>Aahana Ranjan</b></p>
+</div>
+
+<div class="card">
+<h3>⭐ Vice-Leader</h3>
+<p><b>Saksham Anant</b></p>
+</div>
+
+</div>
+</section>
+
+<section id="members">
+<h2 class="section-title">Team Roles</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Aahana Ranjan</h3>
+<p>🎨 Crafter</p>
+<p>💡 Motivator</p>
+</div>
+
+<div class="card">
+<h3>Aadya Anant</h3>
+<p>🩺 Team Medic</p>
+<p>🛠 Vice-Crafter</p>
+</div>
+
+<div class="card">
+<h3>Saksham Anant</h3>
+<p>🏗 Builder</p>
+<p>🎉 Event Planner</p>
+</div>
+
+<div class="card">
+<h3>Abhinav Anant</h3>
+<p>♟ Strategist</p>
+<p>🏆 Trainer (Coach)</p>
+</div>
+
+</div>
+</section>
+
+<section id="election">
+<h2 class="section-title">Election System</h2>
+
+<div class="card">
+<h3>🗳 Democratic Leadership</h3>
+
+<p>
+The Flames Team holds elections every
+<b class="glow">3 days</b>.
+All members can participate and vote.
+Leadership positions may change according
+to the election results.
+</p>
+
+</div>
+</section>
+
+<section id="rules">
+<h2 class="section-title">Team Rules</h2>
+
+<div class="rules">
+
+<p>✅ Respect all members.</p>
+
+<p>✅ Work together as a team.</p>
+
+<p>✅ Follow leadership decisions.</p>
+
+<p>❌ Fighting is not allowed.</p>
+
+<p>❌ Forcing or bullying anyone is not allowed.</p>
+
+<p>
+⚠ Any member involved in fighting or forceful behaviour
+will be suspended for <b>2 days</b>.
+</p>
+
+</div>
+</section>
+
+<section id="gallery">
+<h2 class="section-title">Gallery</h2>
+
+<div class="gallery">
+<div>Photo 1</div>
+<div>Photo 2</div>
+<div>Photo 3</div>
+<div>Photo 4</div>
+</div>
+
+</section>
+
+<footer>
+<h3>🔥 FLAMES TEAM 🔥</h3>
+<p>Founded by Abhinav Anant</p>
+<p>© 2026 Flames Team. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
